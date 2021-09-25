@@ -15,9 +15,7 @@ export default function Temperature() {
             <span className="currentTemp" id="tempDisplay">
               {" "}
             </span>
-            <span className="units">
-              19° <a href="#">C </a> | <a href="#"> F </a>{" "}
-            </span>
+            <span className="units">19° C | F </span>
           </div>
         </div>
         <div className="col-6">
