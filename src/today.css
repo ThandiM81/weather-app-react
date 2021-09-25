@@ -1,0 +1,38 @@
+li::first-letter {
+  text-transform: Uppercase;
+}
+
+ul.conditions {
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  margin-top: 25px;
+}
+
+.temp-now {
+  padding-left: 10px;
+}
+.iconNow {
+  margin: 0 auto;
+}
+.currentTemp {
+  font-size: 60px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
+
+.current-condition {
+  font-weight: bold;
+  font-size: larger;
+}

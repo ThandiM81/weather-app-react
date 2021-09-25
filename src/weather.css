@@ -1,0 +1,44 @@
+.App {
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  border-radius: 5px;
+  margin-top: 30px;
+  max-width: 620px;
+  padding: 20px;
+  border-style: solid;
+  background-image: linear-gradient(
+    to bottom,
+    #dedede,
+    #dcdcdc,
+    #dad9da,
+    #d8d7d8,
+    #d6d4d6,
+    #d3d1d3,
+    #d0cfd1,
+    #cdccce,
+    #c9c9ca,
+    #c5c5c6,
+    #c2c2c2,
+    #bebebe
+  );
+}
+.weather-app {
+  max-width: 600px;
+  margin: 10px auto;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font: monospace;
+  margin-top: 30px;
+  font-size: smaller;
+}

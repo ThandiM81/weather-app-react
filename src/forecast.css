@@ -1,0 +1,29 @@
+.weather-forecast {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0px;
+}
+
+.forecast-date {
+  font-size: 22px;
+}
+
+.col-2 img {
+  margin: 0 auto;
+  display: block;
+}
+
+.forecast-temp-max {
+  font-size: 18px;
+}
+
+.forecast-temp-min {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  img {
+    width: 40px;
+  }
+}
