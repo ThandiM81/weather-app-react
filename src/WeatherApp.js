@@ -20,10 +20,7 @@ export default function WeatherApp() {
         </div>
       </div>
       <footer className="small">
-        <a
-          href="https://github.com/ThandiM81/weather-app-forecast"
-          target="_blank"
-        >
+        <a href="https://github.com/ThandiM81/weather-app-react">
           Open-source code
         </a>
         by Thandi M
