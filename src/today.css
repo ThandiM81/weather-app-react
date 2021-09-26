@@ -15,13 +15,17 @@ ul {
 }
 
 .temp-now {
-  padding-left: 10px;
+  padding-left: 20px;
 }
+
 .iconNow {
   margin: 0 auto;
+  height: 120px;
+  width: 120px;
 }
+
 .currentTemp {
-  font-size: 60px;
+  font-size: 58px;
   font-weight: bold;
   vertical-align: middle;
 }
@@ -35,4 +39,18 @@ ul {
 .current-condition {
   font-weight: bold;
   font-size: larger;
+}
+
+@media (max-width: 900px) {
+  #iconNow {
+    width: 60px;
+  }
+
+  .currentTemp {
+    font-size: 40px;
+  }
+
+  .units {
+    font-size: 16px;
+  }
 }

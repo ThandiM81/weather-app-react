@@ -11,7 +11,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>
@@ -23,7 +22,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>
@@ -35,7 +33,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>
@@ -47,7 +44,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>
@@ -59,7 +55,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>
@@ -71,7 +66,6 @@ export default function Forecast() {
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt="forecast-icon"
-            width="80px"
           />
           <div className="forecast-temps">
             <span className="forecast-temp-max"> 24° </span>

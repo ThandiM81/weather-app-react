@@ -12,8 +12,8 @@ export default function Form() {
             placeholder="Enter city...."
             id="city-entry"
             className="form-control"
-            autocomplete="off"
-            autofocus="on"
+            autoComplete="off"
+            autoFocus="on"
           />
         </div>
         <div className="col" id="find">

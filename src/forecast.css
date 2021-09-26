@@ -7,10 +7,15 @@
 .forecast-date {
   font-size: 22px;
 }
+.col-2 #daily-forecast {
+  margin: 0 auto;
+  display: block;
+}
 
 .col-2 img {
   margin: 0 auto;
   display: block;
+  width: 75px;
 }
 
 .forecast-temp-max {
@@ -23,7 +28,7 @@
 }
 
 @media (max-width: 900px) {
-  img {
+  .Forecast img {
     width: 40px;
   }
 }

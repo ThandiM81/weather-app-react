@@ -15,14 +15,14 @@ export default function WeatherApp() {
           <Form />
           <Cities />
           <Today />
-          <Temperature />
+          <Temperature defaultCity="New York" />
           <Forecast />
         </div>
       </div>
       <footer className="small">
         <a href="https://github.com/ThandiM81/weather-app-react">
           Open-source code
-        </a>
+        </a>{" "}
         by Thandi M
       </footer>
     </div>
