@@ -12,7 +12,7 @@ export default function Temperature(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Wednesday",
+
       description: response.data.weather[0].description,
       iconURL: "https://openweathermap.org/img/wn/04n@2x.png",
       wind: response.data.wind.speed,
