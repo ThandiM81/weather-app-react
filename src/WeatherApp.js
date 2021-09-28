@@ -1,7 +1,5 @@
 import React from "react";
 import Form from "./Form";
-
-import Temperature from "./Temperature";
 import Forecast from "./Forecast";
 
 import "./weather.css";
@@ -12,7 +10,6 @@ export default function WeatherApp() {
       <div className="weather-app">
         <div className="weather-app-wrapper">
           <Form />
-          <Temperature defaultCity="New York" />
           <Forecast />
         </div>
       </div>
