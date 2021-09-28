@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./today.css";
 
 export default function Temperature(props) {
@@ -12,7 +13,7 @@ export default function Temperature(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconURL: "https://openweathermap.org/img/wn/04n@2x.png",
       wind: response.data.wind.speed,
@@ -22,42 +23,53 @@ export default function Temperature(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="temperature">
-        <div className="row">
-          <div className="col-6">
-            <div className="temp-now">
-              <img
-                src={weatherData.iconURL}
-                alt={weatherData.description}
-                id="iconNow"
-              />
-              <span className="currentTemp" id="tempDisplay">
-                {Math.round(weatherData.temperature)}
-              </span>
-              <span className="units"> C | F </span>
-            </div>
+      <div>
+        <div className="Cities">
+          <h1>{weatherData.city}</h1>
+          <div className="Date">
+            <h2>
+              <FormattedDate date={weatherData.date} />
+            </h2>
+            <h3 className="text-capitalize">{weatherData.description}</h3>
           </div>
-          <div className="col-6">
-            <ul className="conditions">
-              <li className="current-condition">
-                <small className="condition-text" id="current"></small>
-              </li>
-              <li>
-                <small className="condition-text" id="rain">
-                  Precipitation: 0%
-                </small>
-              </li>
-              <li>
-                <small className="condition-text" id="humid">
-                  Humidity: {weatherData.humidity}%
-                </small>
-              </li>
-              <li>
-                <small className="condition-text" id="wind">
-                  Wind: {weatherData.wind}km/h
-                </small>
-              </li>
-            </ul>
+        </div>
+        <div className="temperature">
+          <div className="row">
+            <div className="col-6">
+              <div className="temp-now">
+                <img
+                  src={weatherData.iconURL}
+                  alt={weatherData.description}
+                  id="iconNow"
+                />
+                <span className="currentTemp" id="tempDisplay">
+                  {Math.round(weatherData.temperature)}
+                </span>
+                <span className="units"> C | F </span>
+              </div>
+            </div>
+            <div className="col-6">
+              <ul className="conditions">
+                <li className="current-condition">
+                  <small className="condition-text" id="current"></small>
+                </li>
+                <li>
+                  <small className="condition-text" id="rain">
+                    Precipitation: 0%
+                  </small>
+                </li>
+                <li>
+                  <small className="condition-text" id="humid">
+                    Humidity: {weatherData.humidity}%
+                  </small>
+                </li>
+                <li>
+                  <small className="condition-text" id="wind">
+                    Wind: {weatherData.wind}m/s
+                  </small>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

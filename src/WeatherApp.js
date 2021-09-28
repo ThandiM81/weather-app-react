@@ -1,7 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import Cities from "./Cities";
-import Today from "./Today";
+
 import Temperature from "./Temperature";
 import Forecast from "./Forecast";
 
@@ -13,8 +12,6 @@ export default function WeatherApp() {
       <div className="weather-app">
         <div className="weather-app-wrapper">
           <Form />
-          <Cities />
-          <Today />
           <Temperature defaultCity="New York" />
           <Forecast />
         </div>
