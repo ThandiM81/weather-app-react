@@ -17,7 +17,7 @@ export default function Temperature(props) {
       </div>
       <div className="temperature">
         <div className="row">
-          <div className="col-6">
+          <div className="col-6 d-flex justify-content-center">
             <div className="temp-now">
               <img
                 src={props.data.iconURL}
@@ -30,7 +30,7 @@ export default function Temperature(props) {
               <span className="units"> C | F </span>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 d-flex justify-content-center">
             <ul className="conditions">
               <li className="current-condition">
                 <small className="condition-text" id="current"></small>

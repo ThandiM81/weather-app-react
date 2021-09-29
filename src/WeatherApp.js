@@ -9,7 +9,7 @@ export default function WeatherApp() {
     <div className="container container-fluid">
       <div className="weather-app">
         <div className="weather-app-wrapper">
-          <Form defaultCity="New York" />
+          <Form defaultCity="San Fransisco" />
           <Forecast />
         </div>
       </div>

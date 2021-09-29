@@ -23,6 +23,7 @@ li::first-letter {
 
 ul.conditions {
   padding-left: 10px;
+  margin-top: 20px;
 }
 
 ul {
@@ -31,16 +32,13 @@ ul {
 
 .row {
   margin-top: 25px;
+  padding: 0 60px;
 }
 
-.temp-now {
-  padding-left: 20px;
-}
-
-.iconNow {
+s #iconNow {
   margin: 0 auto;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 }
 
 .currentTemp {
