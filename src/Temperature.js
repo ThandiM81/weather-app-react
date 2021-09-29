@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+
 import "./form.css";
 import "./today.css";
 
@@ -17,20 +19,16 @@ export default function Temperature(props) {
       </div>
       <div className="temperature">
         <div className="row">
-          <div className="col-6 d-flex justify-content-center">
+          <div className="col-6">
             <div className="temp-now">
-              <img
-                src={props.data.iconURL}
-                alt={props.data.description}
-                id="iconNow"
-              />
+              <WeatherIcon code={props.data.icon} />
               <span className="currentTemp" id="tempDisplay">
                 {Math.round(props.data.temperature)}
               </span>
               <span className="units"> C | F </span>
             </div>
           </div>
-          <div className="col-6 d-flex justify-content-center">
+          <div className="col-6">
             <ul className="conditions">
               <li className="current-condition">
                 <small className="condition-text" id="current"></small>

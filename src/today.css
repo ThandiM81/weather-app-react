@@ -32,25 +32,23 @@ ul {
 
 .row {
   margin-top: 25px;
-  padding: 0 60px;
+  padding: 0 50px;
 }
 
-s #iconNow {
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
+canvas {
+  margin-top: 20px;
 }
 
 .currentTemp {
   font-size: 58px;
   font-weight: bold;
-  vertical-align: middle;
+  padding-left: 15px;
 }
 
 .units {
   font-size: 20px;
   position: relative;
-  top: -10px;
+  top: -15px;
 }
 
 .current-condition {
