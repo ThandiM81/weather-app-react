@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import Conversion from "./Conversion";
 
 import "./form.css";
 import "./today.css";
@@ -22,11 +23,7 @@ export default function Temperature(props) {
           <div className="col-6">
             <div className="temp-now">
               <WeatherIcon code={props.data.icon} />
-              <span className="currentTemp" id="tempDisplay">
-                {Math.round(props.data.temperature)}
-                <small>°</small>
-              </span>
-              <span className="units"> C | F </span>
+              <Conversion celsius={props.data.temperature} />
             </div>
           </div>
           <div className="col-6">
