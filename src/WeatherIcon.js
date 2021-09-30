@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactSkycon, SkyconType } from "react-skycons-extended";
+import { ReactSkycon } from "react-skycons-extended";
 
 import "./today.css";
 
@@ -17,13 +17,12 @@ export default function WeatherIcon(props) {
     "10n": "RAIN",
     "09d": "SHOWERS_DAY",
     "09n": "SHOWERS_NIGHT",
-    "13d": "SNOW",
+
     "13d": "SNOW_SHOWERS_DAY",
     "13n": "SNOW_SHOWERS_NIGHT",
     "50d": "FOG",
     "50n": "FOG",
-    "11d": "THUNDER",
-    "11d": "THUNDER_RAIN",
+
     "11d": "THUNDER_SHOWERS_DAY",
     "11n": "THUNDER_SHOWERS_NIGHT",
   };
