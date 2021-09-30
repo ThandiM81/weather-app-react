@@ -60,9 +60,19 @@ canvas {
   font-size: larger;
 }
 
-@media (max-width: 900px) {
-  #iconNow {
-    width: 60px;
+@media (max-width: 760px) {
+  canvas {
+    width: 50px;
+  }
+
+  .col-6 {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  ul.conditions {
+    margin-top: 5px;
   }
 
   .currentTemp {
@@ -71,5 +81,17 @@ canvas {
 
   .units {
     font-size: 16px;
+    vertical-align: bottom;
+    top: -45px;
+  }
+
+  .row {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  #find {
+    display: block;
+    margin: 0 auto;
   }
 }

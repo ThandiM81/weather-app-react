@@ -31,11 +31,7 @@ export default function Temperature(props) {
               <li className="current-condition">
                 <small className="condition-text" id="current"></small>
               </li>
-              <li>
-                <small className="condition-text" id="rain">
-                  Precipitation: 0%
-                </small>
-              </li>
+
               <li>
                 <small className="condition-text" id="humid">
                   Humidity: {props.data.humidity}%

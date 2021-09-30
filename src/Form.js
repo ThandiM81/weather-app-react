@@ -42,7 +42,7 @@ export default function Form(props) {
       <div>
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className=" col-8">
+            <div className="col-md-8">
               <input
                 type="search"
                 placeholder="Enter city...."

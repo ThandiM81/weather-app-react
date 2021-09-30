@@ -27,8 +27,20 @@
   opacity: 0.8;
 }
 
-@media (max-width: 900px) {
-  .Forecast img {
-    width: 40px;
+@media (max-width: 760px) {
+  #forecast {
+    margin-top: 5px;
+  }
+  .forecast-date,
+  .forecast-temp-max,
+  .forecast-temp-min {
+    font-size: 15px;
+  }
+
+  .col-2 img {
+    width: 20px;
+  }
+  .col-2 {
+    padding: 0;
   }
 }
