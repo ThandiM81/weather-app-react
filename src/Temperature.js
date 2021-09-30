@@ -24,6 +24,7 @@ export default function Temperature(props) {
               <WeatherIcon code={props.data.icon} />
               <span className="currentTemp" id="tempDisplay">
                 {Math.round(props.data.temperature)}
+                <small>°</small>
               </span>
               <span className="units"> C | F </span>
             </div>

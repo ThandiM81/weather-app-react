@@ -42,13 +42,17 @@ canvas {
 .currentTemp {
   font-size: 58px;
   font-weight: bold;
+
   padding-left: 15px;
+  text-align: start;
+  vertical-align: top;
 }
 
 .units {
   font-size: 20px;
   position: relative;
-  top: -15px;
+  top: -65px;
+  padding-left: 10px;
 }
 
 .current-condition {
