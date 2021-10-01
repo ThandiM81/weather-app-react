@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "./Form";
-import Forecast from "./Forecast";
 
 import "./weather.css";
 
@@ -9,8 +8,7 @@ export default function WeatherApp() {
     <div className="container container-fluid">
       <div className="weather-app">
         <div className="weather-app-wrapper">
-          <Form defaultCity="San Fransisco" />
-          <Forecast />
+          <Form defaultCity="San Francisco" />
         </div>
       </div>
       <footer className="small">

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Temperature from "./Temperature";
+import Forecast from "./Forecast";
 
 import "./form.css";
 import "./today.css";
@@ -10,6 +11,7 @@ export default function Form(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -19,6 +21,8 @@ export default function Form(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
   }
 
@@ -70,6 +74,7 @@ export default function Form(props) {
           </div>
         </form>
         <Temperature data={weatherData} />
+        <Forecast coordinates={weatherData} />
       </div>
     );
   } else {
