@@ -21,8 +21,9 @@ export default function Form(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
-      lat: response.data.coord.lat,
-      lon: response.data.coord.lon,
+      coordinates: response.data.coord,
+      latitude: response.data.coord.lat,
+      longitude: response.data.coord.lon,
     });
   }
 
@@ -74,7 +75,7 @@ export default function Form(props) {
           </div>
         </form>
         <Temperature data={weatherData} />
-        <Forecast coordinates={weatherData} />
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
