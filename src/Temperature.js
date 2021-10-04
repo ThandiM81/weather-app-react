@@ -15,11 +15,10 @@ export default function Temperature(props) {
           <h2>
             <FormattedDate date={props.data.date} />
           </h2>
-          <h3 className="text-capitalize">{props.data.description}</h3>
         </div>
       </div>
       <div className="temperature">
-        <div className="row">
+        <div className="row align-self-center">
           <div className="col-6">
             <div className="temp-now">
               <WeatherIcon code={props.data.icon} />
@@ -31,7 +30,11 @@ export default function Temperature(props) {
               <li className="current-condition">
                 <small className="condition-text" id="current"></small>
               </li>
-
+              <li>
+                <small className="condition-text ext-capitalize" id="condition">
+                  {props.data.description}
+                </small>
+              </li>
               <li>
                 <small className="condition-text" id="humid">
                   Humidity: {props.data.humidity}%

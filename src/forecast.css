@@ -1,21 +1,23 @@
 .weather-forecast {
-  text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 0px;
 }
 
 .forecast-date {
   font-size: 22px;
 }
-.col-2 #daily-forecast {
-  margin: 0 auto;
-  display: block;
+
+.row#forecast-data {
+  text-align: center;
+  padding: 0 25px;
+}
+.col {
+  padding: 0;
 }
 
-.col-2 img {
-  margin: 0 auto;
-  display: block;
-  width: 75px;
+.col-2 {
+  margin: 0;
+  width: 100%;
 }
 
 .forecast-temp-max {
@@ -25,6 +27,10 @@
 .forecast-temp-min {
   font-size: 18px;
   opacity: 0.8;
+}
+
+canvas {
+  width: 70px;
 }
 
 @media (max-width: 760px) {
@@ -37,10 +43,14 @@
     font-size: 15px;
   }
 
-  .col-2 img {
+  canvas {
     width: 20px;
   }
   .col-2 {
+    padding: 0;
+  }
+
+  .row#forecast-data {
     padding: 0;
   }
 }

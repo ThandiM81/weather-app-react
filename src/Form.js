@@ -46,8 +46,8 @@ export default function Form(props) {
     return (
       <div>
         <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-md-8">
+          <div className="row" id="city-form">
+            <div className="col-9">
               <input
                 type="search"
                 placeholder="Enter city...."
@@ -58,18 +58,12 @@ export default function Form(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col" id="find">
+            <div className="col-3" id="find">
               <input
                 type="submit"
-                className="search-button"
+                className="btn btn-primary"
                 value="Search 🔍"
                 id="search-city"
-              />
-              <input
-                type="submit"
-                className="location-button"
-                value="Current 📍"
-                id="location-search"
               />
             </div>
           </div>

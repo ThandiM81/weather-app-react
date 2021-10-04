@@ -23,7 +23,9 @@ li::first-letter {
 
 ul.conditions {
   padding-left: 10px;
-  margin-top: 20px;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 20px;
 }
 
 ul {
@@ -31,27 +33,29 @@ ul {
 }
 
 .row {
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0 50px;
 }
+.temp-now {
+  float: right;
+}
 
-canvas {
-  margin-top: 20px;
+.temp-now canvas {
+  margin-top: 10px;
 }
 
 .currentTemp {
-  font-size: 58px;
+  font-size: 50px;
   font-weight: bold;
-
   padding-left: 15px;
   text-align: start;
   vertical-align: top;
 }
 
 .units {
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
-  top: -65px;
+  top: -50px;
   padding-left: 10px;
 }
 
@@ -61,7 +65,7 @@ canvas {
 }
 
 @media (max-width: 760px) {
-  canvas {
+  .temp-now canvas {
     width: 50px;
   }
 
@@ -76,22 +80,17 @@ canvas {
   }
 
   .currentTemp {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .units {
-    font-size: 16px;
+    font-size: 18px;
     vertical-align: bottom;
-    top: -45px;
+    top: -35px;
   }
 
   .row {
     padding: 5px;
     margin-top: 10px;
-  }
-
-  #find {
-    display: block;
-    margin: 0 auto;
   }
 }
