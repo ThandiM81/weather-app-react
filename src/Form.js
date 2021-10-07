@@ -61,7 +61,7 @@ export default function Form(props) {
             <div className="col-3" id="find">
               <input
                 type="submit"
-                className="btn btn-primary"
+                className="btn"
                 value="Search 🔍"
                 id="search-city"
               />

@@ -32,6 +32,16 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #27296d;
+  font-weight: bold;
+}
+
+a:active {
+  color: black;
+}
+
 .row {
   margin-top: 20px;
   padding: 0 50px;
@@ -83,10 +93,16 @@ ul {
     font-size: 44px;
   }
 
-  .units {
-    font-size: 18px;
+  .units span {
+    font-size: 16px;
     vertical-align: bottom;
-    top: -35px;
+    padding-left: 10px;
+    top: -45px;
+  }
+
+  .temperature {
+    display: flex;
+    justify-content: space-around;
   }
 
   .row {

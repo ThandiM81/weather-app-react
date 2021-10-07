@@ -18,9 +18,9 @@ export default function Temperature(props) {
         </div>
       </div>
       <div className="temperature">
-        <div className="row align-self-center">
+        <div className="row">
           <div className="col-6">
-            <div className="temp-now">
+            <div className="temp-now self-align center">
               <WeatherIcon code={props.data.icon} />
               <Conversion celsius={props.data.temperature} />
             </div>

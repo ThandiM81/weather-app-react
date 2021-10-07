@@ -31,6 +31,7 @@
 
 canvas {
   width: 70px;
+  color: var(--default-font-color);
 }
 
 @media (max-width: 760px) {
